@@ -1,0 +1,69 @@
+Fullstack
+Frontend + Backend + Database
+
+
+Frontend
+
+website - collection of web pages that are connected together
+
+webpage - it a document that displays content in the browser
+
+static webpage -  
+it is a webpage where the content is fixed
+html -structure
+css-stylings 
+bootstrap 
+
+dynamic webpage 
+where user can interact
+js - dynamic nature 
+framework -collection of pre defined code
+react- js framework
+
+
+html - hypertext markup language
+
+hypertext - text reference to other text
+markup- a set of rules that defines how content should be displayed 
+
+it is a standard markup language that is used 
+to create strucute for a webpage
+it contains series of elements that are represented
+by tags
+
+tag
+<reserverdword>
+open tag
+
+</reserverd word>
+closing tag
+
+element
+open tag + content +closing tag
+<res>content </res>
+
+container tags or pair tag
+<res>content </res>
+
+void tags or empty tags or self closing tag
+<img>
+
+extensions
+live server
+live preview
+prettier 
+
+
+<!DOCTYPE html>--declaration
+it tell the version and type of a document
+
+html tag
+it is root element for a webpage
+<html>
+ <head>-it is used to describe title,to link third party libraries, meta data
+  <title>my html page</title>
+ </head>
+ <body>
+    where the actual content will be displayed
+ </body>
+</html>
