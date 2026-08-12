@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    html
+    elements - open content closing
+    type of tags - pair tag --self closing tag
+    headings 
+    paragraph
+    list tags -ordered and unordered
+    relative and absolute
+    anchor tag- external routing and internal routing
+    image tag-alt 
+    tables ---table,tr,td and th
+
+
+    tags are divided based on the behaviour
+    1) block level elements- 
+    are the elements which occupies total space and always start on
+    a new line
+   div, heading, p,table,form
+
+   2) inline elements
+   are elements which takes necessary space and doesn't start on a 
+   new line
+   span, a, img ,input,
+
+   div-block 
+   division element that is used to group the elements for applying styles
+
+   span-inline
+   span element is used to group the text for applying styles
+
+
+
+
+   <h1>heading 1</h1> <h1>heading 2</h1>
+   <a href="">link1</a>
+    <a href="">link2</a>
+    
+    <div style="background:lightcoral">
+        <h1>heading 1</h1>
+        <p>Lorem ipsum <span style="font-size: 3rem;color:blueviolet">dolor</span> sit amet consectetur adipisicing elit. Fuga unde soluta, dolores quia error iste delectus labore voluptates nesciunt neque voluptatem atque quasi, id eligendi, iusto eveniet quibusdam eius mollitia.</p>
+    </div>
+    <div style="background:lightgreen">
+        <h1>heading 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde soluta, dolores quia error iste delectus labore voluptates nesciunt neque voluptatem atque quasi, id eligendi, iusto eveniet quibusdam eius mollitia.</p>
+    </div>
+    <div>
+        <h1>heading 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde soluta, dolores quia error iste delectus labore voluptates nesciunt neque voluptatem atque quasi, id eligendi, iusto eveniet quibusdam eius mollitia.</p>
+    </div>
+
+
+    forms
+    it is used to collect the information from the user and allowing
+    user to submit the data to the server
+
+    login,register,contact ,crud operations
+
+    forms are defined with form tag
+    form textfields are defined with input tag
+    label tag is used provide the hint about the input tag
+
+    attributes
+    type it is used control the text field
+    type='text'
+    type='number'
+    type='email'
+
+    placeholder
+    it provides the hint about the input
+
+    for and id
+    it is used to link the input to the label
+
+    name
+    it is used to carry the data to the backend as key value pairs
+    username=john
+    name=john
+     password= john@
+
+     formsubmitco
+    <form action="">
+    action - it specifies where the data should be sumbmiited
+    method='GET'
+    method='POST'
+
+    
+    -->
+    <form action="" method="POST">
+        <label for="nm">enter username:</label>
+        <input type="text" required name="uname" id="nm" placeholder="enter username" > <br>    
+        <label for="num">enter phone number:</label>
+        <input type="number" name="mblnumer" id="num"  placeholder="enter phone no"> <br>
+        <label for="">enter email</label>
+        <input type="email" name="mail"  placeholder="enter email" >
+        <br>
+        <label for="">enter password</label>
+        <input type="password">
+        <br>
+        <label for="">upload ur resume</label>
+        <input type="file">
+        <br>
+        <label for="">book your slot</label>
+        <input type="datetime-local">
+        <br>
+        <input type="range">
+        <input type="search" >
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+    <form action="">
+    <div>select your stack</div>
+    <input type="radio" name="skillset" id="py" value="python"> 
+    <label for="py">python stack</label> <br>
+
+    <input type="radio" name="skillset" id="java" value="java">
+     <label for="java">java stack</label> <br>
+    <input type="radio" name="skillset" id="mern" value="mern"> 
+    <label for="mern">mern stack</label> <br>
+
+    <div>select your skills</div>
+    <input type="checkbox" name="skills" value="html"> <label for="">html</label>
+    <input type="checkbox" name="skills" value="css"> <label for="">css</label>
+    <input type="checkbox" name="skills" value="js"> <label for="">js</label>
+   <br>
+   <textarea name="" id="" cols="30" rows="10"
+    placeholder="enter description"></textarea>
+    <br>
+    <label>select your Education</label>
+    <select name="edu" id="">
+        <option value="btech">btech</option>
+        <option value="degree">degree</option>
+        <option value="inter">inter</option>
+    </select>
+   <input type="checkbox"> <label for="">i agree for terms and conditons</label>
+   <input type="submit" >
+    </form>
+    <!-- semantics
+     
+    -->
+    <header>content</header>
+    <nav>content</nav>
+    <section>content</section>
+    <section>content</section>
+    <section>content</section>
+    <section>content</section>
+    <footer>content</footer>
+</body>
+</html>
