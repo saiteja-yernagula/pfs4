@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css- cascading style sheets
+     it is a style sheet language that is used to describe
+     the presentation of a webpage such as colors,texts,fonts,
+     animations,layouts and responsivenes
+
+     3 ways to insert css
+     1) inline css
+     styles are added to element itself using style attribute
+     css is full of properties and values
+     <h1 style='color:red;background:black'>heading 1</h1>
+     2) internal css
+     styles are added to the document using style tag in head section
+
+     selectors 
+     it is used to target the html elements for applying styles
+    
+      selector{
+        property:vallue
+       }
+         h2{
+        color:yellow;
+        background:lightpink
+      }
+
+     <h2>heading 2</h2>
+
+    
+
+
+     3) external css
+     styles are added to external css file that has extension .css
+     and can be linked using link tag
+     demo.css
+     h3{
+     color:red;
+     }
+
+     inline having high specificity
+     based on how we define 
+
+
+      types of selectors
+      1) simple selectors
+        a) tagname or element selector
+        it targets the elements based on a tagname
+        h1{
+        color:red;
+        }
+
+        b) class selector
+        class is denoted by .
+        it is used to style the group of elements at once
+
+        .el1{
+        color:violet;
+        }
+        <div class='el1'>content </div>
+
+        c) id selector
+        it is denoted by #
+        it is used to apply to styles uniquely
+        #demo{
+        color:green;
+        }
+        <h1 id='demo'>heading</h1>
+      2) combinators
+      3) pseudo class
+    
+     -->
+     <link rel="stylesheet" href="demo.css">
+     <style>
+            /* .el1{
+           color:violet;
+            }
+            .el2{
+                background:black;
+                color:white;
+            }
+            #demo{
+                color:violet
+            } */
+
+        /* #d1{
+            color:blue;
+        } */
+        /* .c1{
+            color:red;
+        } */
+        /* div{
+            color:green
+        } */
+        /* 
+        id is having high specificity
+        class is having high specifity than tagname
+
+        box model
+        it contains 4 componnents that describes the presentation of a element
+
+        1) content 
+         properties - height and width
+        
+        2) padding
+        it is the space inside of an element
+        padding:20px;
+
+        padding: 10px 20px 30px 40px;
+                 t     r   b    l
+        padding: 10px 20px 30px ;
+                 t    r/l   b
+        padding: 10px 20px  ;
+                 t/b   r/l
+
+        3) border
+        radius
+        style
+        color
+        width
+        border:width style color;
+        border :2px solid black;
+
+        styles
+        solid
+        double
+        dotted
+        dashed
+        ridge
+        groove
+        inset 
+        outset
+
+
+        d)margin
+        it is the space outside of an element
+        margin:20px;
+
+
+        
+
+        */
+        div{
+            background:rgb(197, 118, 130);
+            width:50%;
+            height:200px;
+            padding:30px;
+           padding: 10px 20px 30px 40px;
+            padding: 10px 20px 30px ;
+            padding: 10px 20px  ;
+        border :7px solid black;
+        border :7px double black;
+        border :7px dotted black;
+        border :7px dashed black;
+        border :7px ridge black;
+        border :7px groove black;
+        border :7px inset black;
+        border :7px outset rgb(101, 21, 21);
+        border-radius:50%;
+        border-radius:4%;
+        margin:20px;
+        margin:10px 20px 30px 40px;
+        margin:10px 20px 30px ;
+        margin:10px 20px ;
+        height:500px;
+        width:100%;
+
+        background-image:url('fruit.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-size:contain;
+        background-size:100% 100%;
+        background-attachment:fixed;
+        }
+        #d1{
+    background-image:url('https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div  class="c1">div container</div>
+    <div id="d1" class="c1">div container</div>
+     <h1 class="el1  el2" id="demo">heading 1</h1>
+     <h2 class="el2">heading 2</h2>
+     <h2>heading 3</h2>
+     <h3 class="el1">heading 4</h3>
+   
+</body>
+</html>
