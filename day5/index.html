@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        combinators
+        descendent selector  ---h1 a
+        child selector ----h1>a
+        
+
+        universal selector
+        it is denoted by *
+
+
+        span{
+        /* we cannot apply width,height margin top and bottom for inline elements
+         display:inline-block;
+        it will behave like a inline but takes properties like block levvel
+        display:inline-block;
+       background:yellow;
+       height:300px;
+       width:300px;
+       color:black;
+       padding:10px;
+       margin:50px;
+
+       hover selectors
+
+        */
+       
+        
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        header,footer{
+            color:white;
+            background:darkblue;
+            padding:20px;
+            text-align:center;
+        }
+       header a{
+        color:white;
+        background:rgb(52, 122, 227);
+        padding:10px;
+        margin:4px;
+        border-radius:10px;
+       }
+
+       .s1{
+        height:500px;
+         background-image:
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+    background-size:100% 100%;
+    color:white;
+    text-align:center;
+    padding-top:200px;
+       }
+
+       .s2{
+        height:550px;
+        padding:100px;
+        background:whitesmoke;
+        text-align: center ;
+       }
+       .s2>div>div{
+        display:inline-block;
+        padding:90px;
+        margin:10px;
+        width:20%;
+        color:white;
+            border-radius:10px;
+       }
+
+       .s3{
+          height:500px;
+          padding:50px;
+          background:whitesmoke;
+       }
+        .s3>div>div{
+        display:inline-block;
+        padding:50px;
+        margin:10px;
+        width:30%;
+            border-radius:10px;
+            background:white;
+            border:2px solid blue;
+       }
+       .s3 h3{
+        color:blue;
+       }
+
+       h3:hover{
+        color:red;
+        border:2px dotted blue;
+        transition:all 1s;
+     
+       }
+       .card:hover{
+        transition:all 1s;
+        transform:rotate(-20deg) ;
+        transform:scale(1.5);
+        transform:scale(0.5);
+        transform:translate(0px ,-10px) ;
+
+       }
+
+       /* 
+       
+       text properties
+
+       text-align:center or right or left;
+       text-shadow:1px 2px 5px black;
+       box-shadow:1px 2px 5px 2px black;
+
+
+       font-properties
+       font-family:cursive;
+       h1{
+        text-shadow:0px 0px 2px black;
+
+       }
+       p{
+       font-family:cursive;
+       font-size:1rem;
+       font-weight:900;
+       font-weight:300;
+       word-spacing:10px;
+       letter-spacing:5px;
+       line-height:2;
+
+       box-shadow:1px 2px 5px 2px black;
+       width:30%;
+       
+    }
+    */
+       
+
+    .s4{
+        width:60%;
+        margin:auto;
+        padding-top:200px;
+        height:500px;
+    }
+    .s4 p{
+        background:lightblue;
+        padding:10px;
+        margin:5px;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </header>
+
+    <section class="s1">
+        <h1>Learn CSS Through Projects</h1>
+        <p>This project <span> demonstrates CSS Colors</span> , Backgrounds, Flexbox, Box Model, Typography, Shadows, and Responsive Design in one modern webpage.</p>
+    </section>
+
+    <section class="s2">
+        <h1>CSS Colors</h1>
+        <div>
+            <div style="background:red;">Red</div>
+            <div style="background:green;">Green</div>
+            <div style="background:blue;">Blue</div>
+            <div style="background:violet;">Violet</div>
+        </div>
+    </section>
+
+
+    <section class="s3">
+        <h1>CSS Box Model</h1>
+        <div>
+            <div class="card">
+                <h3>Card One</h3>
+                <p>Padding creates space inside the element. Border surrounds the content. Margin creates space</p>
+            </div>
+            <div class="card">
+                <h3>Card two</h3>
+                <p>Padding creates space inside the element. Border surrounds the content. Margin creates space</p>
+            </div>
+            <div class="card">
+                <h3>Card three</h3>
+                <p>Padding creates space inside the element. Border surrounds the content. Margin creates space</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="s4">
+        <h1>Css fonts</h1>
+        <p style="font-weight: 300;">Light Font Weight (300)</p>
+        <p style="font-weight: 400;">Light Font Weight (400)</p>
+        <p style="font-weight: 700;">Light Font Weight (700)</p>
+        <p>This paragraph demonstrates font-family, font-size, letter-spacing, line-height, and font-weight properties.</p>
+    </section>
+
+    <footer>
+        © 2026 CSS Learning Project | Designed for Frontend Practice
+    </footer>
+
+
+</body>
+</html>
