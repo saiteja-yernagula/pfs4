@@ -107,11 +107,54 @@
             height:50vh;
 	    padding:100px 20px;
 	    background:rgb(23, 23, 23);
+        border:1px solid black;;
         }
        .s3 i{
 	font-size:4rem;
         color:green;
 	}
+
+    .s3 .card:hover{
+        transform:translate(0,-10px);
+        border:2px solid green;
+        transition:all 0.5s;
+    }
+
+
+    .s4{
+        background:black;
+        padding:5%;
+        color:white;
+        text-align: center;
+    }
+    .parent{
+        display:flex;
+        gap:20px;
+        line-height:1.4;
+    }
+    .parent img{
+        width:100%;
+        height:400px;
+    }
+
+    
+
+    
+@media screen and (width<576px){
+    html{
+        font-size:10px;
+    }
+    .s1{
+        flex-direction:column;
+    }
+    .s3 .container{
+        flex-direction:column;
+    }
+    .parent{
+        flex-direction:column;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -170,6 +213,32 @@
                 <p>Design clean and attractive websites that provide great user experience.</p>
             </div>
         </div>
+    </section>
+
+    <section class="s4">
+     <h1>My Projects</h1>
+     <div class="parent">
+        <div class="item">
+            <div><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+            <h1>Portfolio Website</h1>
+            <p>A personal portfolio website built using HTML to showcase my skills and projects.</p>
+            <button class="btn2">View Details</button>
+        </div>
+
+        <div class="item">
+            <div><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+            <h1>Portfolio Website</h1>
+            <p>A personal portfolio website built using HTML to showcase my skills and projects.</p>
+            <button class="btn2">View Details</button>
+        </div>
+
+        <div class="item">
+            <div><img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+            <h1>Portfolio Website</h1>
+            <p>A personal portfolio website built using HTML to showcase my skills and projects.</p>
+            <button class="btn2">View Details</button>
+        </div>
+     </div>
     </section>
 
         
