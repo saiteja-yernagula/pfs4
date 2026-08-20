@@ -11,7 +11,7 @@
             padding:0;
             box-sizing:border-box;
         }
-        header{
+        header,footer{
             background:black;
             color:white;
             padding:4%;
@@ -152,7 +152,25 @@
     }
     
 
-    
+    .s6{
+        background:black;
+        color:white;
+        display:flex;
+        padding:5%;
+        font-size: 1.5rem;
+    }
+    .s6>div{
+        flex-basis:50%;
+        line-height: 1.6;
+    }
+    li::marker{
+    color:green;
+    }
+
+    .s6 h1{
+        text-decoration: 6px solid underline green;
+    }
+
 @media screen and (width<576px){
     html{
         font-size:10px;
@@ -277,6 +295,36 @@
             </tr>
         </table>
     </section>
+
+    <section class="s6">
+        <div>
+            <h1>Achievements</h1>
+            <ul>
+                <li>Completed HTML & CSS fundamentals course</li>
+                <li>Completed HTML & CSS fundamentals course</li>
+                <li>Completed HTML & CSS fundamentals course</li>
+                <li>Completed HTML & CSS fundamentals course</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Contact</h1>
+            <ul>
+                <li>Email: johndoe@example.com</li>
+                <li>Phone: +123 456 7890</li>
+                <li>Website: www.johndoe.com</li>
+                <li>Location: New York, USA</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 John Doe. All rights reserved.</p>
+        <div>
+             <i class="fa-solid fa-github"></i>
+             <i class="fa-solid fa-linkedin"></i>
+             <i class="fa-solid fa-twitter"></i>
+        </div>
+    </footer>
 
         
 </body>
