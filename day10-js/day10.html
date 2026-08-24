@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    html 
+    css 
+    bootstrap
+    
+    static webpages
+    dynamic webpages --- validation, addtocart, search, filter
+
+    javascript- dynamic nature- interaction
+
+    javascript is a highlevel intrepreted programming language
+    that is used to add dynamic nature to the webpages
+
+    variables
+    datatypes
+    condtional 
+    loops
+    functions
+    methods
+
+    how to insert javascript
+    1) inline
+    <button onclick="console.log('hello from inline js')">click me</button>
+    ctrl shift j---console tab
+
+    2) internal
+    <script>
+        console.log('hello world from internal')
+    </script>
+
+    3) external
+    demo.js
+    console.log('hello world from external')
+
+    <script src='demo.js'></script>
+
+    variables 
+    variables are like containers which is used to store the
+    data and the data could be anything
+
+    variables are defined with var,let ,const keywords followed
+    by variable name followed by value
+
+    var a=10;
+    let b=20;
+    const c=30;
+    console.log(a,b,c)
+
+
+    variable terms
+
+    declaration ----allocating a memory to the variable
+    var a;
+
+    undefined ---a variable without a value
+    console.log(a)
+
+    assignment ---declaration in one and assigning value in another line
+    var b;
+    b=20;
+    console.log(b);
+
+    initialization
+    var c=30;
+    console.log(c)
+
+    unexisting variable
+    console.lod(d)
+
+    hoisting
+    it is a behaviour in js where the declaration of a variable
+    and functions are moved to top even before execution
+
+    console.log(a)//undefinded
+    var a=10;
+
+
+    datatypes
+    a) primitive datatypes
+      1) which stores the single values
+      2) which are immutable
+      3) which are get by value and post by value
+      4) stores in stack
+
+      1) strings
+      it is collection of characters that are enclosed in ''
+      or "" or `` 
+      strings are immutable
+
+   var str='hello world';
+   str[0]='z'
+   console.log(str[0])
+
+      2) number
+      var a=10
+      var b=-10
+      var c=10.5
+      console.log(a,b,c)
+
+      3) boolean- true or false
+      var isadmin=true;
+      var premiumuser=true;
+      var student=false;
+      console.log(isadmin,premiumuser,student)
+
+      4) undefined
+      5) null
+      it is a intensional absence of a value
+      var emp1=null;
+      var teamlead=null;
+      console.log(emp1)
+      
+
+    b) non primitive datatypes
+      1) which stores the multiple values
+      2) which are mutable
+      3) which are get by reference and post by referencce
+      4) stores in heap
+
+
+      1) array
+      it is used to store the collection of data values in a singe 
+      variable
+      and can be acces using numbered index
+      it is a homogeneous and heterogenous
+
+      var arr=[1,'hello',true,false,null]
+      arr[1]='helloworld'
+      console.log(arr)
+      console.log(arr[1])//hello
+
+      2)  objects
+      it is used to store the data in collection of key value pairs
+      and can be accessed by named index
+    
+      var obj={
+        batchno:4,
+        count:25,
+        days:30,
+        stack:'python'
+      }
+      obj.stack='python fullstack'
+      console.log(obj)
+
+    // 1st - dot notation
+    console.log(obj.stack);
+    //2nd -  square bracket notation
+    console.log(obj['days'])
+
+
+    3) functions
+    function greet(){
+    console.log('welcome to the webpage')
+    }
+    greet()
+
+    var a='hello'
+    console.log(typeof(a))//string
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    -->
+    <button onclick="console.log('hello from inline js')">click me</button>
+
+    <script>
+    //   console.log("hello world from internal");
+    //   var a = 10;
+    //   let b = 20;
+    //   const c = 30;
+    //   console.log(a, b, c);
+
+
+    // var a;
+    // console.log(a)
+    
+    //   var b;
+    // b=20;
+    // console.log(b);
+
+    // console.lod(d);
+//      var a
+//     console.log(a)
+//    a=10;
+   var str='hello world';
+   str[0]='z'
+   console.log(str[0])
+
+       var a=10
+      var b=-10
+      var c=10.5
+      console.log(a,b,c)
+var isadmin=true;
+      var premiumuser=true;
+      var student=false;
+      console.log(isadmin,premiumuser,student)
+
+      var emp1=null;
+      var teamlead=null;
+      console.log(emp1)
+
+      var arr=[1,'hello',true,false,null]
+      arr[1]='helloworld'
+      console.log(arr)
+      console.log(arr[1])//hello
+      console.log(arr[-1])//undefind
+
+      var data=[4,25,30]
+
+      var obj={
+        batchno:4,
+        count:25,
+        days:30,
+        stack:'python'
+      }
+      obj.stack='python fullstack'
+      console.log(obj)
+
+    // 1st - dot notation
+    console.log(obj.stack);
+    //2nd -  square bracket notation
+    console.log(obj['days'])
+
+
+    function greet(){
+    console.log('welcome to the webpage')
+    }
+    greet()
+-
+    
+    var a='hello';
+    console.log(typeof(a))//string
+
+
+
+    </script>
+    <script src="demo.js"></script>
+  </body>
+</html>
