@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        functions 
+        functions is a piece of reusable block of code that is
+        used to perform specific action when something invokes it
+
+        functions are defined with function keyword followed by funciton
+        name followed by () may include paramets and followed by block
+        of code
+
+        //function defintion -static function
+        function greet(){
+        console.log('hello user welcome to the page')
+        }
+        //function calling
+        greet()
+        
+        //dynamic
+         function greet(name){//parameters
+        console.log(`hello ${name} welcome to the page`)
+        }
+        //function calling
+        greet('john')//arguments
+        greet('jessy')
+
+        key points in functions
+        1) function name stores function definition
+          console.log(greet)//definiton
+          greet()//calling
+        2)logging of function calling will give you the return value
+          console.log(greet())//calling+(return value)undefined
+          why return
+          1) to store the end value
+          2) to terminate the function 
+        3) statements after return will not be executed
+        4) only named function can only be hoisted
+
+        
+         function greet(name){//parameters
+         console.log(`hello ${name} welcome to the page`)
+         return 'hello worlld'
+         console.log('hi world')
+         }
+         console.log(greet)
+         greet('john')
+         console.log(greet('jessy'))
+
+         types of function
+         1) named function 
+         2) anonymous function
+         3) arrow function
+         4) iife 
+         5) callback function
+          
+         // anonymous  
+         let sum=function(a,b){
+            console.log(a+b)
+        }
+        sum(1,2)
+        sum(3,4)
+        // arrow function
+        // we can eliminate {} and it takes return keyword
+        //we can eliminate () if there is a single parameter
+         let add=a=>a+a
+         console.log(add(3))
+         //immediate invoking function expression -iife
+        //   (function(){
+        //     console.log('welcome to the page')
+        //   })();
+
+        // callback 
+        // callback is when a function definition is passed to another
+        // function as an argument and later executes in outer fun
+
+        function addtocart(callback){
+            console.log('added to cart')
+            callback(order)
+        }
+        function payment(callback){
+            setTimeout(()=>{
+                console.log('payment is completed')
+                callback()
+            },3000)
+        }
+        function order(){
+            console.log('order is placed')
+        }
+        addtocart(payment)
+        
+        */
+
+        // closures
+        // when an inner function having access to the variable
+        // which is defined in outer function and can able
+        // to remember and change the value
+        function outer(){
+            let count=0
+            console.log('outer')
+            return function(){
+                count++
+                console.log(count)
+                console.log('inner')
+                
+            }
+        }
+        // outer()()
+        // outer()()
+        let a=outer()
+        a()//1
+        a()//2
+    
+       
+       
+
+
+
+
+        
+      
+        
+    </script>
+</body>
+</html>
