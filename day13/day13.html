@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="" id="registerform">
+        <input type="text" id="inp1" placeholder="enter ur name">
+        <input type="text" id="inp2" placeholder="enter ur password">
+        <button type="submit">submit</button>
+     </form>
+    <script>
+        /*
+        form handling using dom
+
+        console.log(registerform)
+        registerform.onsubmit=function(event){
+        event.preventDefault()//it will prevent automatic form submmission
+        console.log('form submitted')
+        // how to access form values
+        //1) using target
+        console.log(event.target[0].value)
+        console.log(event.target[1].value)
+
+        //2)using id
+        console.log(inp1.value)
+        console.log(inp2.value)
+       }
+
+       */
+
+    //    regex - regular expression - to match a specific patterns for validation
+/*
+single occurence
+    let pattern=/[a-z]/
+multiple occurence
+    let pattern=/[a-z]+/
+    let pattern=/[A-Z]+/
+    let pattern=/[0-9]+/
+    let pattern=/[!@#^&*]+/
+    let pattern=/[a-zA-Z0-9]+/
+
+    mobile number
+    let pattern=/[0-9]{10}/
+
+   let  emailpattern=/[a-zA-Z0-9.]+@[a-z]+.[a-z]{3}/
+    name -- [a-zA-Z0-9.]
+   symbol - @
+   gmail- [a-z]+
+   . - .
+   com- [a-z]{3}
+    
+   password
+
+   1) one uppercase- (?=.*[A-Z])
+   2) one lowercas- (?=.*[a-z])
+   3) one number- (?=.*[0-9])
+   4) one special char- (?=.*[!@#$%^&])
+   5) lenght -8 --- {8}
+
+   let passwordpattern=/(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&]).{8}/
+   let password='John@123'
+   console.log(password.match(passwordpattern))
+
+
+*/ 
+let passwordpattern=/(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&]).{8,15}/
+   let password='John@123'
+   console.log(password.match(passwordpattern))
+
+ let emailpattern=/[a-zA-Z0-9.]+@[a-z]+\.[a-z]{3}/
+ let email='jessy@gmail.com'
+ console.log(email.match(emailpattern))
+
+
+
+
+    let pattern=/[0-9]{10}/
+    let text='9888834252'
+    console.log(text.match(pattern))
+
+
+    </script>
+    
+</body>
+</html>
