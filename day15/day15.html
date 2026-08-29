@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        es-6 concepts- react pre requistic
+        1) let and const
+        2) arrow functions
+        3) hof 
+        4) local storage
+        5) spread operator
+        6) destructuring
+
+        variable terms
+
+        variable declaration
+        var a;
+
+        assignment
+        var a;
+        a=10;
+        a=20;//reassignment
+
+        initilization
+        var a=10
+
+        hoisting
+        console.log(a)
+        var a=10;
+
+
+        var
+        redeclaration is allowed
+        assignment and reassignment is allowed
+        hoisting is allowed
+
+
+        let
+        redeclaration is not allowed
+        assignment and reassignment is allowed
+        hositing is not allowed because it was in tdz (tempororal dead zone)
+
+
+        const
+        redeclaration is not allowed
+        assignment and reassignment is not allowed only initialization is allowed
+        hositing is not allowed because it was in tdz (tempororal dead zone)
+
+
+
+
+
+        scope
+        it is life or accessibility of an variable
+        1) global scope - we can access from anywhere-var,let and const
+        2) block scope - wa can access within the block only - let and const
+        3) local or function scope- wa can access within the function - var let const
+
+
+        
+        
+        const founder='sairam sir'
+        console.log(founder)
+
+        {
+            const trainer='teja'
+            console.log(trainer)
+            console.log(founder)
+        }
+            // console.log(trainer)
+
+      
+        function classroom(){
+            var std1='jaswanth'
+            let std2='lokesh'
+            const std3='lokesh'
+            console.log(std1)
+            console.log(std2)
+            console.log(std3)
+
+            console.log(founder)
+        }
+        classroom()
+        console.log(std1)
+        console.log(std2)
+        console.log(std3)
+        
+        ;
+
+
+        localstorage
+        how to store data
+        let pfs4std='jaswanth'
+        localStorage.setItem('pfs4',pfs4std)
+
+        how to get data from localstorage
+         let data=localStorage.getItem('pfs4')
+        console.log(data)
+        
+        JSON.stringify()
+        it is a method which converts js object into json object
+
+    JSON.parse()
+    it is a method which converts json into js objects
+
+    let pfs4students=[
+        {name:'jaswanth', id:234},
+        {name:'lokesh', id:24},
+        {name:'deepika', id:264}
+    ]
+    
+    localStorage.setItem('pfs4students',JSON.stringify(pfs4students))
+    
+    
+        let values=JSON.parse(localStorage.getItem('pfs4students'))
+        console.log(values)
+
+    
+
+    higher order functions
+    a function which takes another function as a argument
+    1) map
+       map is used to create a transformed array by applying 
+       provided function for every element 
+       and it returns the transformed array
+  let arr=["html",'css','js','react']
+   let newarr=arr.map((val,ind,ar)=>{
+    // console.log(val)
+    // console.log(ind)
+    // console.log(ar)
+    return val+ " - frontend"+" index is "+ind
+   })
+   console.log(arr)
+   console.log(newarr)
+
+    2) filter
+    filter is used to create a filtered array by applyin boolean 
+    function for every element and returns the filtered array
+    let arr=[1,2,3,4,5,6,7,8]
+    let filtered=arr.filter((val,ind,ar)=>{
+    return val%2==0
+    })
+    console.log(arr)
+    console.log(filtered)
+    3) reduce
+    it converts list of values into single value-
+    total 
+    no of items
+
+    4) sort
+
+    5) find
+
+    */ 
+    let arr=[123,22,63,84,52,64,7,8]
+   
+    let filtered=arr.filter((val,ind,ar)=>{
+       
+    return val%2==0
+    })
+ 
+    console.log(arr)
+    console.log(filtered)
+
+    let sum=arr.reduce((acc,val,ind,ar)=>{
+        return acc+val
+    },0)
+    console.log(sum)
+
+    let sortedarr=arr.sort((a,b)=>{
+      return a-b//low to high
+     return b-a//high to low
+    })
+    console.log(sortedarr)
+
+
+ 
+
+
+    </script>
+</body>
+</html>
