@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        es6  -
+      var  let const
+      scopes
+      hof 
+      localstorage
+
+      shallow copy
+      references are copies not the values
+
+
+
+      spread operator
+      it is used to spread the values of iterable(string,objs,arrays)
+      it is used for deep copy in objects and arrays
+      it is used for merging 
+
+
+
+
+
+
+      
+      let a=['html','css']
+        let b=a
+        b[0]='react'
+        console.log(a)//react css
+        console.log(b)//react css
+        //deep copy
+        let c=['html','css']
+        let d=[...c]
+        d[0]='react'
+        console.log(c)
+        console.log(d)
+
+
+        //deep copy 
+        let obj1={
+        name:'john'
+       }
+       let obj2={...obj1}
+       obj2.name='jessy'
+       console.log(obj1)
+       console.log(obj2)
+
+       let frontend=['html','css','js']
+       let backend=['python','flask']
+      console.log([...frontend,...backend,'mysql'])
+
+      let obj1={
+        name:'john'
+      }
+      let obj2={
+        age:25
+      }
+      console.log({...obj1,...obj2,city:'vizag'})
+
+      Destructuring
+      it is the process extracting values from objects and array
+      and assigned to variable
+
+
+
+
+      */ 
+   let a=['html','css']
+   let [first,second]=a
+   console.log(first)
+
+     let data=[[['html','css'],['js','react']],[['python','java'],
+     ['django','flask','springboot']]]
+     let [[static,dynamic],[languages,framework]]=data
+    console.log(languages[1])
+
+
+    let obj={
+        name:'john',
+        age:25,
+        address:{
+            city:'vizag',
+            state:'andhra'
+        }
+    }
+    let {name:nm,age,address:{city,state}}=obj
+    // console.log(obj.address.city)
+    console.log(city)
+
+
+    </script>
+</body>
+</html>
