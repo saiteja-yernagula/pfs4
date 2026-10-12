@@ -1,0 +1,208 @@
+
+
+1) company - dilshaj infotech
+2) freshers- resume & projects  & jd
+3) communication - confidence 
+4) technical 
+mern ,python,java
+
+html(5)
+html- it is used to define the structure of webpage
+doctype- it defines the type and version of document 
+semantics- are the tags which describes the meaning about       webpage- section,nav, article ,header ,footer
+meta- provides extra information about a page
+block - which occupies total space- div,h1,p
+inline - which occupies necessary space - img,a,button,input
+
+css 
+css- it is used for stylings, describe the presentaationn of a    
+     webpage 
+boxmodel- it defines the presentation of an element, it contains four components content-w,h,padding,border,margin
+
+inline-block - it behaves like a inline  but takes properties    
+       like a block level 
+
+positions-apperance-fixed,sticky,relative ,absolute and static
+                    - top,bottom,right,left
+
+z-index -  it controls the stack order 
+
+flex box- it is a one dimensional layout model that is used to 
+          create layouts
+         parent properts
+display:flex;
+flex-direction: row ; row-reverse,column,column-reverse;
+justify-content:center,end,start,space-between,space-around,evenly
+align-items:
+gap: 
+
+child properties-
+flex-basis:30%; defines the initial length of an item
+order: 
+
+media queries 
+
+breakpoints: sm,md,lg,xl,xxl
+@media screen and (width<500px){
+.container{
+flex-direction:column;
+}
+}
+
+
+
+js 
+js- js is used to add dynamic nature to the webpages
+hoisting- declaration of a variable is moved to top before the
+         execution
+var ,let ,const - 
+ var - redeclare,reassign,hoisting,scopes
+ let - cannot redeclare,reassign,hoisting not possible(tdz)
+ const -  cannot redeclare,cannot reassign, not possile (tdz)
+
+  scope-accessibility of an variable
+  block- let,const
+  function- var,let ,const
+  global-var,let ,const
+
+datatypes
+1) primitive - number,string,boolean ,undefined and null
+2) non primitive- functions,array,objects,date 
+
+functions- reusable block of code to perform specific task
+          when something invokes it
+types of functions
+1) named function
+2) arrow functions- concise way of writing a function-return,(),{}
+3) anonymous function-a function that defines without a name 
+4) callback funcions-when a function definition is passed to 
+                  another func as an argument 
+
+closure-
+when an inner function remember and change the variable which are 
+defined in outer function
+
+synchronous js- which executes line by line
+asynchronous js - parallel level of execution
+1) promises- 
+it specifies the eventual completion or failure of an asycnchronous operation
+
+three state-
+pending
+resolved
+rejected
+
+creating a promise
+consuming a promise 
+1) .then.catch
+2) async await
+
+
+
+using fetch and using axios
+        
+let apiurl='https://fakestoreapi.com/products'
+
+fetch(apiurl).then((data)=>data.json())
+.then((finaldata)=>console.log(finaldata))
+
+async function getdata(){
+let data=await fetch(apiol)
+let finaldata=await data.json()
+console.log(finaldata)
+}
+getdata()
+
+
+es-6 
+destructuring - extracting value from an object and array and 		assigning into a variable
+
+spread operator - it is used for deep copying the values
+
+
+hof - map,filter,reduce,sort,find
+
+this keyword- it represents the current calling object
+call,apply,bind
+
+event bubbling -child to parent
+event capturing-parent to child
+
+
+React 
+react- react is js library used to build single page applications
+why react- virtual dom, component, spa
+component - renders the part of UI
+types - 
+class components- life cycle methods 
+functional components- hooks 
+
+props- it is used to pass the data from parent to child and immutable
+state- it handles dynamic data of a component and rerenders only state    
+       changes
+useState- it is used store the dynamic data of a component
+        import {useState} from 'react';
+        let [state,setState]=useState('value');
+
+useEffect - it is used to manage the side effects such as 
+            api calling,timers,localstorage
+
+      import {useEffect} from 'react'
+      useEffect(()=>{
+	fetchdata()
+       },[value])
+
+controlled form handling
+ it is controlled by react
+  onChange=   e.target.value()
+uncontrolled form handling
+  useRef()
+
+react router dom
+it is used for navigation ,routing 
+
+npm install react-router-dom
+main --- define 
+rules- approutes.jsx
+
+useNavigate()
+it is used for programmatical navigation
+
+useParams()
+it is used to get the dynamic data from url
+
+useContext() or redux or reduxtoolkit
+it is used global state management 
+it is used to overcome props drilling
+
+reduxtookit
+store
+slice
+useSelector()- it is used to retrieve data from store
+useDispatch()- it is used to sent the action and payload from the comp
+
+customhooks
+protectedroute
+localstorage
+
+optimizing techniques
+1) useMemo()
+2) useCallback()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+react
+
+

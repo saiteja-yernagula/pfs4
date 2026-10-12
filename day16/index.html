@@ -155,6 +155,48 @@
 
       </div>
     </div>
+    
+    <script>
+      let tasks=JSON.parse(localStorage.getItem('pfs4tasks')) || []
+      display()
+      function addtask(){
+        let inp=document.getElementById('inp1')
+        if(inp.value==''){
+          alert('enter value first ')
+          return 
+        }
+        tasks.push(inp.value)
+        localStorage.setItem('pfs4tasks',JSON.stringify(tasks))
+        console.log(tasks)
+
+        display()
+      }
+      function display(){
+        let tasklist=document.getElementById('tasklist')
+        tasklist.innerHTML=tasks.map((val,ind)=>{
+          return `
+          <div class='task'>
+           <h3>${val}</h3>
+           <button onclick='deletetask(${ind})' class='delete-btn'>del</button>  
+          </div>
+          `
+        }).join('')
+      }
+
+      function deletetask(delitem){ 
+        tasks=tasks.filter((val,ind)=>{
+
+          return ind!==delitem
+        })
+        localStorage.setItem('pfs4tasks',JSON.stringify(tasks))
+        display()
+      }
+
+
+
+
+    </script>
+
 
   </body>
 </html>
